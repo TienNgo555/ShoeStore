@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    background-color: rgb(243, 247, 247);
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin: 0px auto;
+}
+.logo img{
+    width:  120px;
+    height: auto;
+}
+.icon{
+    padding-right: 20px;
+}
+.icon img{
+    width: 30px;
+    height: auto;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    background: black;
+}
+.menu-item {
+    background-color: black;
+}
+.subMenu{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 80px;
+    color: white;
+}
+.mainContent h3{
+    text-align: center;
+    padding: 20px 0px;
+}
+.imgMain img{
+    width: 100%;        
+    height: auto;       
+    max-width: 100%;
+}
+.list li:hover img{
+    opacity: 0.75;
+}
+.listItem li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+.listItem li img{
+    max-width: 100%;
+    height: auto;
+}
+.listItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+.footer{
+    background: #E9E4E4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer h6{
+    text-transform: uppercase;
+}
+.intro, .policy , .contact{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.policy ul{
+    list-style: none;
+}
+.social h6{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.socialIcon {
+    display: flex;
+}
+.footer > div {
+    flex: 1;                 
+}
+.footer > div > h6{
+    text-align: center;          
+}
+.footer .contact p,ul{
+     text-align: center;                 
+}
+.socialIcon {
+    justify-content: center; 
+    gap: 10px;               
+}
+.social img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-item {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-item > a {
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+}
+
+.subMenu {
+    display: none;              
+    position: absolute;
+    background-color: #343a40;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.subMenu li {
+    padding: 8px 15px;
+    border-bottom: #575757 solid 1px;
+}
+
+.menu-item:hover .subMenu {
+    display: block;
+}
+
+.menu-item a::before {
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: crimson;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25 cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu-item:hover a::before{
+    width: 100%;
+}
+
+
